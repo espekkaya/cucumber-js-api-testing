@@ -1,0 +1,44 @@
+{
+    "extends": [
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2019,
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": [
+            2,
+            4,
+            { "SwitchCase": 1 }
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "comma-dangle": [
+            "error",
+            "only-multiline"
+        ],
+        "cucumber/async-then": 2,
+        "no-return-await": 0,
+        "no-extend-native": 0,
+        "curly": [
+             2,
+             "multi",
+             "consistent"
+        ],
+        "@typescript-eslint/camelcase": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/ban-ts-ignore": "off",
+        "@typescript-eslint/ban-ts-comment": "off"
+    },
+    "globals": { },
+    "plugins": [
+        "import",
+        "promise",
+        "cucumber"
+    ]
+}
